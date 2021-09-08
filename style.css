@@ -13,9 +13,10 @@ header {
     width: 100%;    
     background-color: blueviolet;
     color: black;
-    margin-top: 0%;
-      
+    margin-top: 0%; 
+
 }
+
 .menu li {
     color: white;
     font-size: 20px;
@@ -106,10 +107,11 @@ h4:hover {
      .content {
          text-align: left;
          margin: 0%;
-         width 90%;
+         width: 90%;
          
      }
  }
+
  @media screen and (max-width: 1653px) {
     #classes, #music, #recipes {
         height: 175px;
@@ -123,9 +125,9 @@ h4:hover {
         margin: 10px;
         float: left;
      }
- }
+ 
 
- }
+    }
  @media screen and (max-width:707) {
      .menu {
          display: block;
