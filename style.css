@@ -1,0 +1,139 @@
+* {
+    margin-right: 3px;
+    margin-left:3px;
+}
+    
+header {
+    font-family: fantasy;
+    font-size: x-large;
+}
+
+.menu {
+    display: inline-flex;
+    width: 100%;    
+    background-color: blueviolet;
+    color: black;
+    margin-top: 0%; 
+
+}
+
+.menu li {
+    color: white;
+    font-size: 20px;
+    list-style-type: none;
+    text-align: center;
+    font-weight: bold;
+    width: 20%;
+    justify-content: center;
+}
+
+li:hover {
+    color:yellow;
+}
+
+#treadmill-photo {
+    height: 485px;
+    width: 362.5px;
+    margin: 20px;
+    float: left;
+ }
+.content {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    width: 85%;
+    position: relative;
+}
+
+.header-four {
+    text-align: justify;
+}
+
+h4:hover {
+    color: white;
+}
+
+.images {
+    width: 65%;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 10px;
+    justify-content: space-around;
+    background-color: thistle;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px; 
+    align-content: center; 
+    float:inline-end;   
+    top: 10px; 
+    margin-bottom: 15px;
+}
+
+
+#classes, #music, #recipes {
+    height: 275px;
+    width: 315px;
+    top: 20px;
+    flex-grow: inherit;
+    justify-content: space-between;
+ }
+
+ .footer {
+    float: left;
+    width: 100%;
+    margin-top: 25px;
+    background-color: lightgray;
+    color: white;
+    text-align: center;
+ }
+ .social-media li {
+     list-style-type: none;
+     display: inline-block;
+ }
+
+ .footer-header {
+     text-align: center;
+     right: 15px;;
+ } 
+ @media screen and (max-width: 500px) {
+     .images {
+         background-color: white;
+      }
+     *{
+         margin-right: 2px;
+         margin-left: 3px;
+     }
+     .content {
+         text-align: left;
+         margin: 0%;
+         width: 90%;
+         
+     }
+ }
+
+ @media screen and (max-width: 1653px) {
+    #classes, #music, #recipes {
+        height: 175px;
+        width: 215px;
+        top: 10px;
+        justify-content: space-between;
+     }   
+     #treadmill-photo {
+        height: 435px;
+        width: 312.5px;
+        margin: 10px;
+        float: left;
+     }
+ 
+
+    }
+ @media screen and (max-width:707) {
+     .menu {
+         display: block;
+         width: 100%;
+         
+     }
+
+     
+ }
