@@ -21,4 +21,4 @@ submitBtn.addEventListener('click', function(){
     //Logs the user's choice in the local storage for future reference
     userChoice = selectMenu.options[selectMenu.selectedIndex].text;
     localStorage.setItem("Muscle Group", userChoice);
-})
+})de
