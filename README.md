@@ -14,16 +14,19 @@ at least 2 Server Side API's
     -Wger (https://wger.de/en/user/api-key)
         -use google calendar
     -Apple Music API (Spotify?)
+^^^ PLACEHOLDER?
+
 CSS framework (not bootstrap)
     -Foundation (https://get.foundation/)
+    -COMPLETE
 client-side storage
-    -Local storage set in letsGetStarted.js
+    -COMPLETE
 polished mobile first UI
     -In Progress
 Quality Coding Standards
 NO alerts, prompts, or confirms
-    -No alerts on letsGetStarted.js
+    -COMPLETE
 Deployed to Github Pages
     -In Progress
 Interactive (accept and respond to user input)
-    -Accepts user input - awaiting response
+    -COMPLETE

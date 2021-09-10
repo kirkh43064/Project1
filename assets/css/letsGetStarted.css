@@ -1,69 +1,157 @@
 * {
-    box-sizing: border-box;
+    margin-right: 3px;
+    margin-left: 3px;
 }
-
+    
 header {
     font-family: fantasy;
     font-size: x-large;
-    margin-bottom: 0%;
+}
+
+section {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
 }
 
 .menu {
     display: inline-flex;
-    width: 100%;
+    width: 100%;    
     background-color: blueviolet;
     color: black;
-    margin-top: 0%;
-    overflow: auto;
-        
+    margin-top: 0%; 
+
 }
+
 .menu li {
     color: white;
-    font-size: 18px;
+    font-size: 20px;
     list-style-type: none;
     text-align: center;
     font-weight: bold;
-    width: 25%;
+    width: 20%;
     justify-content: center;
 }
 
-#treadmill-photo {
-    height: 375px;
-    width: 300px;
-    margin: 20px;
-    float: left;
- }
-section {
+li:hover {
+    color:yellow;
+}
+
+.content {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bolder;
-    display:inline-flexbox;
-    width: 80%;
+    width: 85%;
+    position: relative;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    float: inline-start;
+.header-four {
+    text-align: justify;
 }
 
-#classes, #music, #recipes {
-    height: 200px;
-    width: 250px;
+h4:hover {
+    color: white;
+}
+
+.images {
+    width: 65%;
+    display: inline-flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    flex-grow: inherit;
-    justify-content: center;
+    position: relative;
+    padding: 10px;
+    justify-content: space-around;
+    background-color: thistle;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px; 
+    align-content: center; 
+    float:inline-end;   
+    top: 10px; 
+    margin-bottom: 15px;
 }
 
-footer {
-    position: absolute;
+ .footer {
+    float: left;
     width: 100%;
-    background-color: lightgrey;
-    display: flex;
-    margin-top: 20px;
+    margin-top: 25px;
+    background-color: lightgray;
+    color: white;
+    text-align: center;
+ }
+ .social-media li {
+     list-style-type: none;
+     display: inline-block;
+ }
+
+ .footer-header {
+     text-align: center;
+     right: 15px;;
+ } 
+ a:visited{
+     color: inherit;
+ }
+ @media screen and (max-width: 500px) {
+     .images {
+         background-color: white;
+      }
+     *{
+         margin-right: 2px;
+         margin-left: 3px;
+     }
+     .content {
+         text-align: left;
+         margin: 0%;
+         width: 90%;
+         
+     }
+     
+ }
+
+ @media screen and (max-width:707) {
+     .menu {
+         display: block;
+         width: 100%;
+         
+     }
+     
+     
+ }
+
+.muscle-background {   
+    width: 150px;
+    height: 276px;
+    background-size: 150px;
+    background-repeat: no-repeat; 
 }
-.contact-info li {
-    display: inline;
-    list-style-type: none;
-    width: 30%;
+
+.mx-auto {
+    margin-right: auto!important;
+}
+
+.workoutContainer {
+    background-color: grey;
+    display: flex;
+    min-width: 100%;
+    height: 276px;
+}
+
+#img1 {
+    display: flex;
+}
+
+.welcome {
+    display: flex;
+    min-width: 100%;
+}
+
+h2 {
+    text-align: center;
+}
+
+#userInput {
+    align-items: center;
+    text-align: center;
+    margin: 2%;
 }

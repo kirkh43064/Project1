@@ -1,6 +1,6 @@
 * {
     margin-right: 3px;
-    margin-left:3px;
+    margin-left: 3px;
 }
     
 header {
@@ -29,6 +29,11 @@ header {
 
 li:hover {
     color:yellow;
+}
+
+a:visited{
+    color:inherit;
+    
 }
 
 #treadmill-photo {
