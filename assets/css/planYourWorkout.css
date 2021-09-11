@@ -1,3 +1,22 @@
+.container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    margin-bottom: 5%;
+  }
+  
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
 * {
     margin-right: 3px;
     margin-left: 3px;
@@ -119,41 +138,10 @@ h4:hover {
      
  }
 
-.muscle-background {   
-    width: 150px;
-    height: 276px;
-    background-size: 150px;
-    background-repeat: no-repeat; 
-}
-
-.mx-auto {
-    margin-right: auto!important;
-}
-
-.workoutContainer {
-    background-color: grey;
-    display: flex;
-    min-width: 100%;
-    height: 276px;
-}
-
-#img1 {
-    display: flex;
-}
-
 .welcome {
-    display: flex;
-    min-width: 100%;
-}
-
-h2 {
+    width: 100%;
     text-align: center;
-}
-
-#userInput {
     align-items: center;
-    text-align: center;
-    margin: 2%;
 }
 
 .contact-info li {
@@ -162,13 +150,7 @@ h2 {
     width: 30%;
 }
 
-.muscle-background {   
-    width: 150px;
-    height: 276px;
-    background-size: 150px;
-    background-repeat: no-repeat; 
-}
-
-.mx-auto {
-    margin-right: auto!important;
+.bodyHeader {
+    width: 100%;
+    text-align: center;
 }

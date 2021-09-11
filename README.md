@@ -14,7 +14,7 @@ at least 2 Server Side API's
     -Wger (https://wger.de/en/user/api-key)
         -use google calendar
     -Apple Music API (Spotify?)
-^^^ PLACEHOLDER?
+^^^ PLACEHOLDERS
 
 CSS framework (not bootstrap)
     -Foundation (https://get.foundation/)
