@@ -67,3 +67,14 @@ footer {
     list-style-type: none;
     width: 30%;
 }
+
+.muscle-background {   
+    width: 150px;
+    height: 276px;
+    background-size: 150px;
+    background-repeat: no-repeat; 
+}
+
+.mx-auto {
+    margin-right: auto!important;
+}
