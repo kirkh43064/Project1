@@ -6,7 +6,6 @@ let muscleImg1 = "";
 let muscleImg2 = "";
 let exerciseDiv =document.querySelector("#workoutList");
 let muscleDiv = document.querySelector(".muscle-background");
-localStorage.getItem("Muscle Group");
 let muscleGroup = localStorage.getItem("Muscle Group");
 let muscleUrl = "https://wger.de/api/v2/muscle";
 let wgerUrl = "https://wger.de";
@@ -30,17 +29,19 @@ submitBtn.addEventListener('click', function(){
     //Logs the user's choice in the local storage for future reference
     userChoice = selectMenu.options[selectMenu.selectedIndex].text;
     localStorage.setItem("Muscle Group", userChoice);
+    getWorkouts();
 })
 
 // kirks added code////////////////////////////////////////////////////////////////////////////////////////////////////////
+function getWorkouts() {
+  muscleGroup = localStorage.getItem("Muscle Group");
+  fetch(muscleUrl)
 
-fetch(muscleUrl)
-
-.then(function(response){
+  .then(function(response){
     return response.json();
-})
+  })
 
-.then(function(response){
+  .then(function(response){
     console.log(response);
     let muscle = response.results.find(function(muscleResults) {
       console.log(muscleResults);
@@ -51,7 +52,7 @@ fetch(muscleUrl)
 
     muscleID = muscle.id;
 
-    console.log(muscle);
+    console.log(muscleID);
 
     let muscleImg1 = muscle.image_url_main
     let muscleImg1Url1 = wgerUrl + muscleImg1;
@@ -72,16 +73,15 @@ fetch(muscleUrl)
   }
   renderImg(muscle);
   workoutList();
-})
-
-
-.catch(function(error){
-  console.log(error);
-})
+  })
+  .catch(function(error){
+    console.log(error);
+  })
+}
 
 function workoutList() {
-  let exerciseListUrl = "https://wger.de/api/v2/exercise/?limit=7&muscles=" + muscleID;
-
+  let exerciseListUrl = "https://wger.de/api/v2/exercise/?limit=9&language=2&muscles=" + muscleID;
+  
   fetch(exerciseListUrl)
 
   .then(function(response){
@@ -90,10 +90,21 @@ function workoutList() {
 
   .then(function(response) {
     console.log(response);
+    while(exerciseDiv.firstChild) {
+      exerciseDiv.removeChild(exerciseDiv.firstChild)
+    }
+
     response.results.forEach(element => {
-    let myList = document.createElement('li');
-    myList.textContent = element.name;
-    exerciseDiv.append(myList);     
-    });   
+      exerciseID = element.id;
+      let myList = document.createElement('li');
+      let myLink = document.createElement('a')
+      myLink.textContent = element.name;
+      myLink.href = `${wgerUrl}/en/exercise/${exerciseID}/view/`;
+      myLink.target= "_blank";
+      myList.appendChild(myLink);
+      exerciseDiv.append(myList);
+
+    }); 
+      
   })
 }
