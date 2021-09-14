@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 header {
@@ -32,7 +33,13 @@ header {
     width: 300px;
     margin: 20px;
     float: left;
- }
+}
+
+.welcome {
+    align-content: center;
+    text-align: center;
+}
+
 section {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bolder;
@@ -42,9 +49,10 @@ section {
 
 .container {
     display: flex;
-    flex-direction: column;
-    width: 80%;
+    flex-direction: row;
+    width: 100%;
     float: inline-start;
+    margin-top: 20px;
 }
 
 #classes, #music, #recipes {
@@ -77,4 +85,13 @@ footer {
 
 .mx-auto {
     margin-right: auto!important;
+}
+
+.wol {
+    display: inline-block;
+    margin-right: 50%;
+}
+
+#workoutList {
+    font-size: x-large;
 }
