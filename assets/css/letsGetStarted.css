@@ -4,7 +4,7 @@
 }
 
 header {
-    font-family: fantasy;
+    /* font-family: fantasy; */
     font-size: x-large;
     margin-bottom: 0%;
 }
@@ -18,6 +18,7 @@ header {
     overflow: auto;
         
 }
+
 .menu li {
     color: white;
     font-size: 18px;
@@ -41,10 +42,16 @@ header {
 }
 
 section {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
     font-weight: bolder;
     display:inline-flexbox;
-    width: 80%;
+    width: 100%;
+}
+
+h2 {
+    background-color: aqua;
+    align-content: center;
+    margin: 0 30%;
 }
 
 .container {
@@ -89,8 +96,7 @@ footer {
 
 .wol {
     display: inline-block;
-    margin-right: 50%;
-}
+    margin-right: 45%;
 
 #workoutList {
     font-size: x-large;
