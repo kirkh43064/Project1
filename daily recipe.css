@@ -1,4 +1,33 @@
+* {
+    margin-right: 3px;
+    margin-left:3px;
+}
+    
 header {
     font-family: fantasy;
     font-size: x-large;
+}
+
+.menu {
+    display: inline-flex;
+    width: 100%;    
+    background-color: blueviolet;
+    color: black;
+    margin-top: 0%; 
+
+}
+
+.menu li {
+    color: white;
+    font-size: 20px;
+    list-style-type: none;
+    text-align: center;
+    font-weight: bold;
+    width: 20%;
+    justify-content: center;
+}
+
+
+li:hover {
+    color:yellow;
 }
