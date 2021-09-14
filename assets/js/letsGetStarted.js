@@ -33,6 +33,8 @@ submitBtn.addEventListener('click', function(){
 })
 
 // kirks added code////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// function to get the workouts from the API
 function getWorkouts() {
   muscleGroup = localStorage.getItem("Muscle Group");
   fetch(muscleUrl)
@@ -41,6 +43,7 @@ function getWorkouts() {
     return response.json();
   })
 
+  // i only have the muscle name so this is to find the correct response
   .then(function(response){
     console.log(response);
     let muscle = response.results.find(function(muscleResults) {
@@ -60,7 +63,8 @@ function getWorkouts() {
     let muscleImg1Url2 = wgerUrl + muscleImg2
 
     console.log(muscleImg1Url1);
-          
+   
+  // function to diplay muscle images as background images
   function renderImg(muscleResults) {
     if (muscleResults.is_front === true) {
       var background1Url = "assets/images/muscular_system_front.svg";
@@ -78,7 +82,7 @@ function getWorkouts() {
     console.log(error);
   })
 }
-
+// this functions displays the workouts as hyperlink text that take you to the corresponding webpag from the API
 function workoutList() {
   let exerciseListUrl = "https://wger.de/api/v2/exercise/?limit=9&language=2&muscles=" + muscleID;
   
