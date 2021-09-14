@@ -9,24 +9,15 @@ Desiree Thompson
 Priyesh Mishra
 Rowan Mollenkopf
 
-REQUIREMENTS:
-at least 2 Server Side API's
-    -Wger (https://wger.de/en/user/api-key)
-        -use google calendar
-    -Apple Music API (Spotify?)
-^^^ PLACEHOLDERS
-
 CSS framework (not bootstrap)
     -Foundation (https://get.foundation/)
-    -COMPLETE
-client-side storage
-    -COMPLETE
+
+    FIGURE OUT HOW TO IMPLEMENT WITHOUT OVERRIDING PREVIOUS STYLES.
+
 polished mobile first UI
     -In Progress
 Quality Coding Standards
-NO alerts, prompts, or confirms
-    -COMPLETE
+
 Deployed to Github Pages
     -In Progress
-Interactive (accept and respond to user input)
-    -COMPLETE
+

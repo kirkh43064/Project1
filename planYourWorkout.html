@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Regimen Fitness</title>
-    <link>
-    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/planYourWorkout.css"/>
     <script src="https://kit.fontawesome.com/a483825eb6.js" crossorigin="anonymous"></script>
 </head>
@@ -25,23 +24,29 @@
     
     <section class="welcome">
         <h1 class="bodyHeader">Plan your new workout & find some new music below!</h1>
-        <h2 class="bodyHeader">Plan your Workout via Google Calendar</h2>
-            <div class="container">
-                <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%239E69AF&ctz=America%2FNew_York&src=NGdnNXFyNzQ1bmU2OWUzbzJranViN2xvZmdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23795548&color=%230B8043&showTitle=0&showPrint=0&showTz=0" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        
+            <div class="card">
+                <h3 class="card-divider bodyHeader">Plan your Workout via Google Calendar</h3>
+                <iframe src="https://calendar.google.com/calendar/embed?src=4gg5qr745ne69e3o2kjub7lofg%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
             </div>
-        <h2 class="bodyHeader">Ready to Start Moving? Listen to the playlist below for some great workout song suggestions</h2>
-            <div class="container">
+            <div class="card">
+                <h3 class="card-divider bodyHeader">Ready to Start Moving? Listen to the playlist below for some great workout song suggestions</h3>
                 <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX70RN3TfWWJh?theme=0" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
             </div>
     </section>
     
     <footer class="footer">
         <h4 class="footer-header">Connect With Us Here</h4>
-            <ul class="social-media">
+        <ul class="social-media">
                 <li><i class="fab fa-twitter"></i><a href="https://www.twitter.com/"></a></li>
                 <li><i class="fab fa-instagram"></i><a href="https://www.instagram.com/"></a></li>
                 <li><i class="fab fa-facebook-square"></i><a href="https://www.facebook.com/"></a></li>
             </ul>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+    <script>
+        $(document).foundation();
+    </script>
 </body>
 </html>

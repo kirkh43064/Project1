@@ -1,25 +1,9 @@
-.container {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio */
-    margin-bottom: 5%;
-  }
-  
-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-  }
+
 
 * {
     margin-right: 3px;
     margin-left: 3px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
     
 header {
@@ -152,5 +136,10 @@ h4:hover {
 
 .bodyHeader {
     width: 100%;
+    text-align: center;
+}
+.card {
+    margin: 0 auto;
+    align-items: center;
     text-align: center;
 }
