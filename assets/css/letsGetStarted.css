@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+header {
+    font-family: fantasy;
+    font-size: x-large;
+    margin-bottom: 0%;
+}
+
+.menu {
+    display: inline-flex;
+    width: 100%;
+    background-color: blueviolet;
+    color: black;
+    margin-top: 0%;
+    overflow: auto;
+        
+}
+.menu li {
+    color: white;
+    font-size: 18px;
+    list-style-type: none;
+    text-align: center;
+    font-weight: bold;
+    width: 25%;
+    justify-content: center;
+}
+
+#treadmill-photo {
+    height: 375px;
+    width: 300px;
+    margin: 20px;
+    float: left;
+}
+
+.welcome {
+    align-content: center;
+    text-align: center;
+}
+
+section {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    display:inline-flexbox;
+    width: 80%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    float: inline-start;
+    margin-top: 20px;
+}
+
+#classes, #music, #recipes {
+    height: 200px;
+    width: 250px;
+    flex-wrap: wrap;
+    flex-grow: inherit;
+    justify-content: center;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    background-color: lightgrey;
+    display: flex;
+    margin-top: 20px;
+}
+.contact-info li {
+    display: inline;
+    list-style-type: none;
+    width: 30%;
+}
+
+.muscle-background {   
+    width: 150px;
+    height: 276px;
+    background-size: 150px;
+    background-repeat: no-repeat; 
+}
+
+.mx-auto {
+    margin-right: auto!important;
+}
+
+.wol {
+    display: inline-block;
+    margin-right: 50%;
+}
+
+#workoutList {
+    font-size: x-large;
+}
