@@ -30,7 +30,7 @@ const createMeal = (meal) => {
             break;
         }
     }
-    content += `<img src=${meal.strMealThumb}/>`;
+    content += `<img src="${meal.strMealThumb}" />`;
     content += `<h1>Ingredients</h1>`;
     content += `<ul>${ingredients.join("")}</ul>`;
     content += `<h2>Instructions</h2>`;
