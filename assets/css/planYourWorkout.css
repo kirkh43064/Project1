@@ -1,0 +1,145 @@
+
+
+* {
+    margin-right: 3px;
+    margin-left: 3px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+    
+header {
+    font-family: fantasy;
+    font-size: x-large;
+}
+
+section {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.menu {
+    display: inline-flex;
+    width: 100%;    
+    background-color: blueviolet;
+    color: black;
+    margin-top: 0%; 
+
+}
+
+.menu li {
+    color: white;
+    font-size: 20px;
+    list-style-type: none;
+    text-align: center;
+    font-weight: bold;
+    width: 20%;
+    justify-content: center;
+}
+
+li:hover {
+    color:yellow;
+}
+
+.content {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    width: 85%;
+    position: relative;
+}
+
+.header-four {
+    text-align: justify;
+}
+
+h4:hover {
+    color: white;
+}
+
+.images {
+    width: 65%;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 10px;
+    justify-content: space-around;
+    background-color: thistle;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px; 
+    align-content: center; 
+    float:inline-end;   
+    top: 10px; 
+    margin-bottom: 15px;
+}
+
+ .footer {
+    float: left;
+    width: 100%;
+    margin-top: 25px;
+    background-color: lightgray;
+    color: white;
+    text-align: center;
+ }
+ .social-media li {
+     list-style-type: none;
+     display: inline-block;
+ }
+
+ .footer-header {
+     text-align: center;
+     right: 15px;;
+ } 
+ a:visited{
+     color: inherit;
+ }
+ @media screen and (max-width: 500px) {
+     .images {
+         background-color: white;
+      }
+     *{
+         margin-right: 2px;
+         margin-left: 3px;
+     }
+     .content {
+         text-align: left;
+         margin: 0%;
+         width: 90%;
+         
+     }
+     
+ }
+
+ @media screen and (max-width:707) {
+     .menu {
+         display: block;
+         width: 100%;
+         
+     }
+     
+     
+ }
+
+.welcome {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.contact-info li {
+    display: inline;
+    list-style-type: none;
+    width: 30%;
+}
+
+.bodyHeader {
+    width: 100%;
+    text-align: center;
+}
+.card {
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+}
