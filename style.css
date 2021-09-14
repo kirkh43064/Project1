@@ -27,6 +27,10 @@ header {
     justify-content: center;
 }
 
+.menu li a {
+    color: white;
+}
+
 li:hover {
     color:yellow;
 }
